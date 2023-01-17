@@ -1,0 +1,135 @@
+/*!   ABOUT Page  Style   */
+
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url(/img/linesOfCode.jfif);
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    /**            Title                 */
+    .title {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        text-decoration: underline;
+        text-shadow: black 0px -10px 5px;
+        padding: 20px;
+    }
+
+    /**          Grid Container         */
+    #page-container {
+        display: grid;
+        margin: 2px;
+        text-align: center;
+        padding: 3px;
+        grid-template-areas:
+            "nav chat chat chat chat"
+            "nav chat chat chat chat"
+            "nav chat chat chat chat"
+            "nav chat chat chat chat"
+            "nav chat chat chat chat"
+            "nav input input input input"
+            "nav input input input input"
+            "nav input input input input";
+        gap: 2px;
+    }
+
+    #page-container > div {
+        text-align: center;
+        padding: 1px 1px 1px 1px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    /**                    Nav        */
+    #nav-container {
+        /* position: fixed; */
+        grid-area: nav;
+        background-image: url(/img/OIP.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 403px;
+        width: 75px;
+    }
+
+    .ul-container {
+        /* border: 2px solid rgb(236, 5, 5); */
+        margin-top: 30px;
+    }
+
+    .li-containers {
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.658);
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .li-containers:hover {
+        border: 2px solid red;
+    }
+
+    .li-containers > a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        border-radius: 10px;
+        padding: 4px;
+        color: rgb(253, 2, 2);
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    /*! Message Board Area   */
+    #mess-board {
+        grid-area: chat;
+        background-color: rgba(6, 14, 19, 0.877);
+        color: white;
+        border: 2px solid white;
+        height: 200px;
+        /* width: 225px; */
+    }
+
+    .messages {
+        border: 1px solid red;
+        border-radius: 10px;
+        background-color: grey;
+        height: 175px;
+        margin-top: 5px;
+    }
+
+    /*! Chat-Input Area    */
+    #chat-input {
+        grid-area: input;
+        background-color: rgba(6, 14, 19, 0.877);
+        color: white;
+        border: 2px solid white;
+        height: 190px;
+        /* width: 225px; */
+    }
+
+    .input {
+        border: 1px solid red;
+        border-radius: 10px;
+        background-color: grey;
+        color: white;
+        height: 160px;
+        margin-top: 10px;
+    }
+}

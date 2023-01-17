@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url(/img/linesOfCode.jfif);
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    /**            Title                 */
+    .title {
+        text-align: center;
+        color: white;
+        font-size: 28px;
+        text-decoration: underline;
+        text-shadow: black 0px -10px 5px;
+        padding: 30px;
+    }
+
+    /**          Grid Container         */
+    #page-container {
+        display: grid;
+        margin: 2px;
+        text-align: center;
+        padding: 3px;
+        grid-template-areas:
+            "nav contact contact contact contact"
+            "nav contact contact contact contact"
+            "nav contact contact contact contact"
+            "nav contact contact contact contact"
+            "nav contact contact contact contact"
+            "nav links links links links"
+            "nav links links links links"
+            "nav links links links links";
+        gap: 2px;
+    }
+
+    #page-container > div {
+        text-align: center;
+        padding: 1px 1px 1px 1px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    /**                    Nav        */
+    #nav-container {
+        /* position: fixed; */
+        grid-area: nav;
+        background-image: url(/img/OIP.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 403px;
+        width: 75px;
+    }
+
+    .ul-container {
+        /* border: 2px solid rgb(236, 5, 5); */
+        margin-top: 30px;
+    }
+
+    .li-containers {
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.658);
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .li-containers:hover {
+        border: 2px solid red;
+    }
+
+    .li-containers > a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    a:hover {
+        border-radius: 10px;
+        padding: 4px;
+        color: rgb(255, 2, 2);
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    /*!  Contact Container  */
+
+    #contact-container {
+        grid-area: contact;
+        border: 2px solid white;
+        border-radius: 10px;
+        height: 275px;
+        background-color: rgba(6, 14, 19, 0.877);
+        color: white;
+    }
+
+    #contact-form {
+        border: 1px solid red;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin: 2px;
+        height: 250px;
+        background-color: rgba(128, 128, 128, 0.438);
+    }
+
+    /*!          Links Main Container / Grid         */
+
+    #links-container {
+        grid-area: links;
+        display: grid;
+        /* width: 225px; */
+        grid-template-areas:
+            "myLink myLink myLink myLink"
+            "links links links links"
+            "div1 div2 div3 div4"
+            "div5 div6 div7 div8";
+        gap: 1px;
+        background-color: rgba(6, 14, 19, 0.877);
+        border: 2px solid white;
+    }
+
+    #links-container > div {
+        display: inline-block;
+        background-color: rgba(128, 128, 128, 0.438);
+        border-radius: 5px;
+        height: 25px;
+        margin: 2px;
+    }
+
+    /*!              Links  Grid         */
+
+    .link-title {
+        grid-area: myLink;
+        font-weight: bold;
+        color: white;
+        padding-top: 5px;
+        /* width: 220px; */
+    }
+
+    /*! Link-1 */
+    .link-1 {
+        grid-area: div1;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link1-facebook {
+        color: blue;
+    }
+
+    /*! Link-2 */
+    .link-2 {
+        grid-area: div2;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link2-github {
+        color: black;
+    }
+
+    /*! Link-3 */
+    .link-3 {
+        grid-area: div3;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link3-fiverr {
+        color: green;
+        text-decoration: none;
+        padding: 1px;
+    }
+
+    /*! Link-4 */
+    .link-4 {
+        grid-area: div4;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link4-youtube {
+        color: red;
+    }
+
+    /*! Link-5 */
+    .link-5 {
+        grid-area: div5;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link5-bitdegree {
+        color: rgb(64, 139, 163);
+        text-decoration: none;
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    /*! Link-6 */
+    .link-6 {
+        grid-area: div6;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link6-w3spaces {
+        color: rgb(103, 177, 103);
+        text-decoration: none;
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    /*! Link-7 */
+    .link-7 {
+        grid-area: div7;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link7-portfolium {
+        color: darkorange;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    /*! Link-8 */
+    .link-8 {
+        grid-area: div8;
+        padding-top: 5px;
+        /* width: 50px; */
+    }
+    #link8-discord {
+        color: rgb(84, 139, 139);
+        text-decoration: none;
+        font-size: 10px;
+    }
+}
