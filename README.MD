@@ -1,4 +1,6 @@
-# Project DEV Host (Version #3)  ( - ONLY VIEWABLE IN MOBILE VIEW!!!! - )
+# Project DEV Host (Version #3)  <br />
+**( - ONLY VIEWABLE IN MOBILE VIEW!!!! - )** <br />
+*Open Dev Tools & click on mobile view*
 
 **About Project DEV Host**
 
