@@ -1,4 +1,4 @@
-# Project DEV Host (Version #3)
+# Project DEV Host (Version #3)  ( - ONLY VIEWABLE IN MOBILE VIEW!!!! - )
 
 **About Project DEV Host**
 
